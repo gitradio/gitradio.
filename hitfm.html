@@ -1,0 +1,17 @@
+<script type="2f0b4022fe2d1d6e2e8abb5f-text/javascript">
+    jwplayer("myElement").setup({
+    autostart: false,
+    preload: "none",
+    controls: true,  	
+    file: "https://en-directo.frequence-radio.com/amp/redirect.php?radio=hit-fm",
+    type: "audio/mpeg",
+    width: 230,
+    height: 30
+     }); 
+jwplayer().on('play', function(){
+setTimeout(function(){
+var textAlt = document.querySelectorAll('#' + jwplayer().id + ' .jw-controlbar-center-group .jw-text-alt')[0];
+if(textAlt) textAlt.innerHTML = 'Live';
+},300);
+});
+</script>
