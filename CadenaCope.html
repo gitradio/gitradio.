@@ -1,0 +1,17 @@
+<script type="b4a894e8a88a6f16b6c4efb7-text/javascript">
+    jwplayer("myElement").setup({
+    autostart: false,
+    preload: "none",
+    controls: true,  	
+    file: "https://en-directo.frequence-radio.com/amp/redirect.php?radio=cadena-cope",
+    type: "mp3",
+    width: 230,
+    height: 30
+     }); 
+jwplayer().on('play', function(){
+setTimeout(function(){
+var textAlt = document.querySelectorAll('#' + jwplayer().id + ' .jw-controlbar-center-group .jw-text-alt')[0];
+if(textAlt) textAlt.innerHTML = 'Live';
+},300);
+});
+</script>
