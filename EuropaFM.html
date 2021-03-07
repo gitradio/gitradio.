@@ -1,0 +1,21 @@
+<script type="2177b7bec3d79f0415be0b29-text/javascript">
+
+
+  setTimeout(function(){
+
+// only works for jwplayer, should find a trick for openplayer
+var element = document.getElementsByClassName('jwplayer');
+if (element.length > 0) {
+  // alert('Element exists!');
+}
+else{
+       //alert('Element does not exist!');
+        var val = "<audio controls src='https://en-directo.frequence-radio.com/amp/redirect.php?radio=europa-fm'\>Tu navegador no soporta el streaming</audio>" ; 
+        document.getElementById("myElement").innerHTML = "<audio controls src='https://en-directo.frequence-radio.com/amp/redirect.php?radio=europa-fm'\>Tu navegador no soporta el streaming</audio>";
+    }
+
+
+
+   }, 2500);
+    
+</script>
