@@ -1,0 +1,17 @@
+<script type="fb56c6131a6b6c8d20c6760d-text/javascript">
+    jwplayer("myElement").setup({
+    autostart: false,
+    preload: "none",
+    controls: true,  	
+    file: "https://en-directo.frequence-radio.com/amp/redirect.php?radio=rock-fm",
+    type: "audio/mpeg",
+    width: 230,
+    height: 30
+     }); 
+jwplayer().on('play', function(){
+setTimeout(function(){
+var textAlt = document.querySelectorAll('#' + jwplayer().id + ' .jw-controlbar-center-group .jw-text-alt')[0];
+if(textAlt) textAlt.innerHTML = 'Live';
+},300);
+});
+</script>
