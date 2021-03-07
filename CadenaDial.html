@@ -1,0 +1,17 @@
+<script type="e5372af56867d63206951156-text/javascript">
+    jwplayer("myElement").setup({
+    autostart: false,
+    preload: "none",
+    controls: true,  	
+    file: "https://en-directo.frequence-radio.com/amp/redirect.php?radio=cadena-dial",
+    type: "mp3",
+    width: 230,
+    height: 30
+     }); 
+jwplayer().on('play', function(){
+setTimeout(function(){
+var textAlt = document.querySelectorAll('#' + jwplayer().id + ' .jw-controlbar-center-group .jw-text-alt')[0];
+if(textAlt) textAlt.innerHTML = 'Live';
+},300);
+});
+</script>
