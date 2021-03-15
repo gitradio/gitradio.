@@ -1,17 +1,30 @@
-<script type="2f0b4022fe2d1d6e2e8abb5f-text/javascript">
-    jwplayer("myElement").setup({
-    autostart: false,
-    preload: "none",
-    controls: true,  	
-    file: "https://en-directo.frequence-radio.com/amp/redirect.php?radio=hit-fm",
-    type: "audio/mpeg",
-    width: 230,
-    height: 30
-     }); 
-jwplayer().on('play', function(){
-setTimeout(function(){
-var textAlt = document.querySelectorAll('#' + jwplayer().id + ' .jw-controlbar-center-group .jw-text-alt')[0];
-if(textAlt) textAlt.innerHTML = 'Live';
-},300);
-});
-</script>
+<head>
+  <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+
+<body>
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="404"
+    data-setup="{}"
+  >
+    <source src="https://hitfm.kissfmradio.cires21.com/hitfm.mp3" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+</body>
